@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Webpack Showcase</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="style.css" rel="stylesheet">
+</head>
+</head>
+
+<body>
+    <div class="container" style="background-color:lightgray; padding:16px;width:50%">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Tip Calculator</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">$</span>
+                    </div>
+                    <input id="txtAmount" type="number" min="0" class="form-control" />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="btn-group mr-2" role="group" aria-label="First group">
+                    <button id="btnTipBy10" type="button" class="btn btn-primary active disabled">10%</button>
+                    <button id="btnTipBy15" type="button" class="btn btn-primary">15%</button>
+                    <button id="btnTipBy20" type="button" class="btn btn-primary">20%</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div id="txtAmountConfirmation" class="col-md-12 font-weight-bold " style="margin-bottom:16px">
+                You are tipping 0% Cheapskate!
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="list-group">
+                    <li id="lblBillAmount" class="list-group-item">Bill Amount: </li>
+                    <li id="lblTipPercentage" class="list-group-item">Tip Percentage: </li>
+                    <li id="lblTipAmount" class="list-group-item">Amount of Tip: </li>
+                    <li id="lblTotal" class="list-group-item font-weight-bold font-italic">Total to be Paid: </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</html>
